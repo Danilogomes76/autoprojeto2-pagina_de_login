@@ -1,0 +1,135 @@
+body{
+    background-image: url(./imagens/wallpaper2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcontainer{
+    border-radius: 20px;
+    width: 630px;
+    -webkit-mask-image: linear-gradient(to right, transparent 1%, black 100%);
+}
+
+.containerglobal{
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+    background-color: rgb(49 1 44);
+    opacity: 0.8;
+}
+
+#container{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    padding: 10px;
+    height: 400px;
+}
+
+#login{
+    width: 70px;
+}
+
+.dados{
+    width: 80%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+#btns{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    margin-top: 8px;
+    color: white;
+    background-color: rgb(145 131 192);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 6px;
+    border: none;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(134, 115, 198);
+}
+
+.inputs{
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(255, 235, 205, 0);
+    border-bottom: 2px solid;
+    padding: 5px 0px 5px 0px;
+    color: white;
+}
+
+.inputs:focus-visible{
+    outline: none;
+}
+
+.txts{
+    margin: 0;
+    margin-top: 5px;
+    text-decoration: none;
+    color: inherit;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.txtsbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+/* DISPLAY CELULAR */
+
+@media screen and (max-width: 820px){
+
+    .inputs{
+        font-size: 20px;
+    }
+
+    .containerglobal{
+        flex-direction: column;
+        width: 70%;
+        align-items: center;
+    }
+
+    .imgcontainer{
+        display: none;
+    }
+
+    #container{
+        width: 80%;
+        height: 70vh;
+    }
+
+    #login{
+        width: 140px;
+    }
+
+    .txts{
+        font-size: 20px;
+    }
+
+
+}
+
+
